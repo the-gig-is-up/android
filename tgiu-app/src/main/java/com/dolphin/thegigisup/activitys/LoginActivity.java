@@ -234,7 +234,8 @@ public class LoginActivity extends ActionBarActivity
          */
         @Override
         public void done(LoginConfirm loggedIn) {
-                                            showLoginConfirmation(loggedIn); }
+            showLoginConfirmation(loggedIn);
+        }
 
         /**
          * If the API call fails, show a toast with the relevant error

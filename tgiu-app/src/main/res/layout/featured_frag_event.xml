@@ -90,10 +90,10 @@
 
             <com.makeramen.roundedimageview.RoundedImageView
                     android:id="@+id/featured_image"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:scaleType="center"
-                    app:riv_corner_radius="35dp"
+                    app:riv_corner_radius="30dp"
                     android:src="@drawable/event"
                     app:riv_oval="false"/>
 

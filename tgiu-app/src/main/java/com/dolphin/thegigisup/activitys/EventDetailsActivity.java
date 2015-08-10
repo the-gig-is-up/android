@@ -283,7 +283,7 @@ public class EventDetailsActivity extends ActionBarActivity {
      */
     public void setEventInfo(Event event) {
         DateTime dateTimeObj = event.getDate();
-        DateTimeFormatter fmt = DateTimeFormat.forPattern("dd MMM yy");
+        DateTimeFormatter fmt = DateTimeFormat.forPattern("dd MMM yyyy");
 
         // Set the appropriate text information
         artist.setText(event.getEventName());

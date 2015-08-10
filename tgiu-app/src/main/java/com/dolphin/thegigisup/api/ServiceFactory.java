@@ -7,7 +7,7 @@ import retrofit.RestAdapter;
  */
 public class ServiceFactory {
 
-    private static final String DEF_ENDPOINT = "http://thegigisup.co.uk/api";
+    private static final String DEF_ENDPOINT = "http://gurpreet.co:9100";
     private static ServiceInterface REST_CLIENT;
 
 
