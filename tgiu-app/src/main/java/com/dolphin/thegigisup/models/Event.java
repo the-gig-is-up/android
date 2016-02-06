@@ -5,6 +5,8 @@ import android.os.Parcelable;
 import com.google.gson.annotations.Expose;
 import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -101,9 +103,8 @@ public class Event implements Parcelable {
      * @return The date of the event in dateTime format
      */
     public DateTime getDate() {
-        DateTime theDate = DateTime.parse(date,
-                DateTimeFormat.forPattern("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"));
-        return theDate;
+        final DateTimeFormatter df = DateTimeFormat.forPattern("EEE MMM dd yyyy HH:mm:ss 'GMT'Z (z)");
+        return df.withOffsetParsed().parseDateTime(date);
     }
 
     /**

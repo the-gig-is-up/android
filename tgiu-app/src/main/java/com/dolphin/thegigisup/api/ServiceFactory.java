@@ -7,7 +7,7 @@ import retrofit.RestAdapter;
  */
 public class ServiceFactory {
 
-    private static final String DEF_ENDPOINT = "http://gurpreet.co:9100";
+    private static final String DEF_ENDPOINT = "https://tgiu.herokuapp.com/api";
     private static ServiceInterface REST_CLIENT;
 
 
